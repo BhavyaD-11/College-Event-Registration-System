@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Events | College Event Registration</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                Campus<span>Events</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="events.html" class="active">Events</a>
+                <a href="my-registrations.html">My Registrations</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Discover Campus Events</h1>
+
+            <p>
+                Explore upcoming events and find something you love.
+            </p>
+        </div>
+    </section>
+
+    <main class="section">
+        <div class="container">
+
+            <!-- Search and Filter -->
+            <div class="filter-bar">
+
+                <input
+                    type="search"
+                    id="eventSearch"
+                    placeholder="🔍 Search events..."
+                    aria-label="Search events"
+                >
+
+                <select id="categoryFilter" aria-label="Filter by category">
+                    <option value="all">All Categories</option>
+                    <option value="technology">Technology</option>
+                    <option value="cultural">Cultural</option>
+                    <option value="sports">Sports</option>
+                    <option value="innovation">Innovation</option>
+                </select>
+
+            </div>
+
+            <!-- Event Cards -->
+            <div class="event-grid" id="eventGrid">
+
+                <article class="event-card" data-category="technology">
+                    <div class="event-image">💻</div>
+
+                    <div class="event-content">
+                        <span class="event-tag">Technology</span>
+
+                        <h3>TechFest 2026</h3>
+
+                        <p>
+                            Discover coding, technology,
+                            and exciting technical competitions.
+                        </p>
+
+                        <div class="event-details">
+                            <span>📅 15 November 2026</span>
+                            <span>📍 College Auditorium</span>
+                            <span>💰 Free Entry</span>
+                        </div>
+
+                        <a href="register.html?event=techfest"
+                           class="btn btn-primary">
+                            Register Now
+                        </a>
+                    </div>
+                </article>
+
+                <article class="event-card" data-category="cultural">
+                    <div class="event-image">🎭</div>
+
+                    <div class="event-content">
+                        <span class="event-tag">Cultural</span>
+
+                        <h3>Rhythm & Beats</h3>
+
+                        <p>
+                            Experience dance, music,
+                            and amazing cultural performances.
+                        </p>
+
+                        <div class="event-details">
+                            <span>📅 20 November 2026</span>
+                            <span>📍 Open-Air Stage</span>
+                            <span>💰 Free Entry</span>
+                        </div>
+
+                        <a href="register.html?event=rhythm"
+                           class="btn btn-primary">
+                            Register Now
+                        </a>
+                    </div>
+                </article>
+
+                <article class="event-card" data-category="innovation">
+                    <div class="event-image">🚀</div>
+
+                    <div class="event-content">
+                        <span class="event-tag">Innovation</span>
+
+                        <h3>Startup Spark</h3>
+
+                        <p>
+                            Present ideas, explore startups,
+                            and learn from creative thinkers.
+                        </p>
+
+                        <div class="event-details">
+                            <span>📅 25 November 2026</span>
+                            <span>📍 Seminar Hall</span>
+                            <span>💰 Free Entry</span>
+                        </div>
+
+                        <a href="register.html?event=startup"
+                           class="btn btn-primary">
+                            Register Now
+                        </a>
+                    </div>
+                </article>
+
+                <article class="event-card" data-category="sports">
+                    <div class="event-image">🏆</div>
+
+                    <div class="event-content">
+                        <span class="event-tag">Sports</span>
+
+                        <h3>Campus Sports Day</h3>
+
+                        <p>
+                            Participate in exciting sports
+                            and compete with fellow students.
+                        </p>
+
+                        <div class="event-details">
+                            <span>📅 28 November 2026</span>
+                            <span>📍 College Ground</span>
+                            <span>💰 Free Entry</span>
+                        </div>
+
+                        <a href="register.html?event=sports"
+                           class="btn btn-primary">
+                            Register Now
+                        </a>
+                    </div>
+                </article>
+
+                <article class="event-card" data-category="technology">
+                    <div class="event-image">🤖</div>
+
+                    <div class="event-content">
+                        <span class="event-tag">Technology</span>
+
+                        <h3>AI Innovation Day</h3>
+
+                        <p>
+                            Discover artificial intelligence
+                            and student innovation projects.
+                        </p>
+
+                        <div class="event-details">
+                            <span>📅 2 December 2026</span>
+                            <span>📍 Computer Lab</span>
+                            <span>💰 Free Entry</span>
+                        </div>
+
+                        <a href="register.html?event=ai-day"
+                           class="btn btn-primary">
+                            Register Now
+                        </a>
+                    </div>
+                </article>
+
+                <article class="event-card" data-category="cultural">
+                    <div class="event-image">🎨</div>
+
+                    <div class="event-content">
+                        <span class="event-tag">Cultural</span>
+
+                        <h3>Creative Canvas</h3>
+
+                        <p>
+                            Celebrate art, creativity,
+                            and the imagination of students.
+                        </p>
+
+                        <div class="event-details">
+                            <span>📅 5 December 2026</span>
+                            <span>📍 Art Studio</span>
+                            <span>💰 Free Entry</span>
+                        </div>
+
+                        <a href="register.html?event=canvas"
+                           class="btn btn-primary">
+                            Register Now
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <p id="noEventsMessage"
+               class="empty-state hidden"
+               style="margin-top: 25px;">
+                No matching events found. Try another search.
+            </p>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-content">
+                <div>
+                    <h3>CampusEvents</h3>
+                    <p>Your campus event registration platform.</p>
+                </div>
+
+                <div>
+                    <h3>Explore</h3>
+
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="events.html">Events</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Student Account</h3>
+
+                    <div class="footer-links">
+                        <a href="login.html">Login</a>
+                        <a href="my-registrations.html">My Registrations</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 College Event Registration.
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
+
